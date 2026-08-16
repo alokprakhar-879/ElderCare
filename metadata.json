@@ -1,0 +1,10 @@
+{
+  "name": "ElderCare",
+  "description": "ElderCare - Intelligent Senior Healthcare & Voice Companion for Senior Citizens and Their Families featuring Voice AI, Emotion & Sentiment Analysis, Medicine Tracking, and Emergency Alerts.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

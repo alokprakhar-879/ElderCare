@@ -1,0 +1,60 @@
+{
+  "entities": {
+    "medicines": {
+      "title": "Medicines",
+      "description": "Prescription medicines for senior citizens",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "dosage": { "type": "string" },
+        "timeLabel": { "type": "string" },
+        "instructions": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["name", "dosage", "status"]
+    },
+    "appointments": {
+      "title": "Appointments",
+      "description": "Doctor appointments and health checkups",
+      "type": "object",
+      "properties": {
+        "doctor": { "type": "string" },
+        "specialty": { "type": "string" },
+        "dateTime": { "type": "string" },
+        "location": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["doctor", "dateTime"]
+    },
+    "conversationLogs": {
+      "title": "Conversation Logs",
+      "description": "AI companion voice & text interaction logs",
+      "type": "object",
+      "properties": {
+        "timestamp": { "type": "string" },
+        "sender": { "type": "string" },
+        "text": { "type": "string" },
+        "detectedEmotion": { "type": "string" },
+        "moodScore": { "type": "number" },
+        "riskLevel": { "type": "string" }
+      },
+      "required": ["sender", "text"]
+    },
+    "alerts": {
+      "title": "Alerts",
+      "description": "Health and emergency alerts for family members",
+      "type": "object",
+      "properties": {
+        "timestamp": { "type": "string" },
+        "severity": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "seniorName": { "type": "string" },
+        "acknowledged": { "type": "boolean" },
+        "resolved": { "type": "boolean" },
+        "type": { "type": "string" }
+      },
+      "required": ["severity", "title", "acknowledged"]
+    }
+  }
+}
